@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521/Orcl
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+login-app:
+    messages:
+    InvalidCredentials: Your Credentials are Invalid
+    accLocked: Your Account is Locked
+     
